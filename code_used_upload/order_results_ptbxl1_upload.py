@@ -8,7 +8,7 @@ from configs.configs import *
 def main():
     
     datafolder = '../data/ptbxl/'
-    outputfolder = '../upload/'
+    outputfolder = '../output/'
 
     models = [
         conf_fastai_xresnet1d101,
