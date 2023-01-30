@@ -12,5 +12,7 @@ number of labels goes up, the complexity of clustering in the penultimate layer 
 The experimental environment is in [requirements.txt](https://github.com/Zhangshuojackpot/Label-Decoupling-Module/blob/main/requirements.txt).<br>
 
 ### Usage
-Run [get_ptbxl.sh](https://github.com/Zhangshuojackpot/Label-Decoupling-Module/blob/main/get_ptbxl.sh) to download the PTB-XL dataset.
-\ ./get_ptbxl.sh
+1. Run [get_ptbxl.sh](https://github.com/Zhangshuojackpot/Label-Decoupling-Module/blob/main/get_ptbxl.sh) to download the PTB-XL dataset:<br>
+`./get_ptbxl.sh`
+2. Reproduce experimetal results:<br>
+`cd `
