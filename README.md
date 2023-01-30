@@ -13,7 +13,27 @@ The experimental environment is in [requirements.txt](https://github.com/Zhangsh
 
 ### Usage
 1. Run [get_ptbxl.sh](https://github.com/Zhangshuojackpot/Label-Decoupling-Module/blob/main/get_ptbxl.sh) to download the PTB-XL dataset:<br>
-`./get_ptbxl.sh`
+```
+./get_ptbxl.sh
+```
 2. Reproduce experimetal results:<br>
-`cd code_used_upload` <br>
-`python`
+```
+cd ./code_used_upload
+python order_results_ptbxl1_upload.py
+```
+
+### Results
+|Method|All|Diag.|Sub-diag.|Super-diag.|Form|Rhythm
+|:---|:---|:---|:---|:---|:---|:---|
+|LSTM|0.909(.002)|0.926(.002)|0.926(.002)||||
+|LSTM+LDM|0.923(.001)|0.931(.002)|0.935(.003)||||
+|Inception1d|0.925(.002)|0.928(.000)|0.927(.000)|||
+|Inception1d+LDM|0.935(.001)|0.940(.002)|0.939(.002)|||
+|LSTM_bidir|0.914(.003)|0.924(.004)|0.929(.002)|||
+|LSTM_bidir+LDM|0.932(.001)|0.936(.003)|0.936(.001)|||
+|Resnet1d_wang|0.919(.001)|0.925(.005)|0.929(.003)|||
+|Resnet1d_wang+LDM|0.930(.000)|0.942(.002)|0.941(.000)|||
+|FCN_wang|0.912(.001)|0.922(.000)|0.924(.002)|||
+|FCN_wang+LDM|0.917(.001)|0.930(.003)|0.936(.003)|||
+|XResNet1d101|0.924(.002)|0.933(.002)|0.926(.001)|||
+|XResNet1d101+LDM|0.937(.002)|0.939(.001)|0.935(.002)|||
